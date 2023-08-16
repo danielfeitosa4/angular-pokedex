@@ -1,0 +1,12 @@
+<div class="title">
+  <img src="https://i.gifer.com/origin/28/2860d2d8c3a1e402e0fc8913cd92cd7a_w200.gif" width="100" alt="pokebola">
+
+  <h1>Pokédex</h1>
+</div>
+<div class="pokemon-list">
+  <app-pokemon-card *ngFor="let pokemon of pokemons; index as i" [pokemon]="pokemon" [numero]="i + 1"></app-pokemon-card>
+</div>
+
+<!--
+  <div *ngFor="let pokemon of pokemons">Pokémon: {{ pokemon}}</div>
+-->
